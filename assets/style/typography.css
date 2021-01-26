@@ -1,0 +1,17 @@
+.body-text-style {
+  font-family: Inter, serif;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.code-text-style {
+  font-family: "Fira Code", serif;
+  font-size: 13px;
+  line-height: 1.54;
+}
+
+.title-text-style {
+  font-family: Inter, serif;
+  font-size: 32px;
+  line-height: 1.25;
+}
