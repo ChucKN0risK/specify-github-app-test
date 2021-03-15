@@ -1,0 +1,31 @@
+{
+  "repository": "@specifyapp/Schibsted-DS",
+  "rules": [
+    {
+      "name": "Design Tokens",
+      "path": "tokens/theme.js",
+      "filter": {
+        "types": ["color", "font", "textStyle", "vector"]
+      },
+      "parsers": [
+        {
+          "name": "to-jss",
+          "options": {
+            "formatName": "camelCase",
+            "formatTokens":{
+              "colorFormat": "rgb",
+              "textStyleFormat": "classObject",
+              "fontSizeUnit":  "px"
+            },
+            "formatConfig": {
+              "jssObjectName": "lightTheme",
+              "exportDefault": false,
+              "tabWidth": 4,
+              "singleQuote": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
