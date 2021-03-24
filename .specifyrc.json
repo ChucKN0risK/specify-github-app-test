@@ -1,27 +1,18 @@
 {
-  "repository": "@specifyapp/Schibsted-DS",
+  "repository": "@specifyapp/Specify-Demo",
   "rules": [
     {
-      "name": "Design Tokens",
-      "path": "tokens/theme.js",
+      "name": "Design Tokens / Colors",
+      "path": "assets/style/colors.css",
       "filter": {
-        "types": ["color", "font", "textStyle", "vector"]
+        "types": ["color"]
       },
       "parsers": [
         {
-          "name": "to-jss",
+          "name": "to-css-custom-properties",
           "options": {
-            "formatName": "camelCase",
             "formatTokens":{
-              "colorFormat": "rgb",
-              "textStyleFormat": "classObject",
-              "fontSizeUnit":  "px"
-            },
-            "formatConfig": {
-              "jssObjectName": "lightTheme",
-              "exportDefault": false,
-              "tabWidth": 4,
-              "singleQuote": true
+              "color": "hsl"
             }
           }
         }
