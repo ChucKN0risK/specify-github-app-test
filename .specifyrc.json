@@ -1,0 +1,107 @@
+{
+  "repository": "@specifyapp/Specify-Demo",
+  "rules": [
+    {
+      "name": "Design Tokens / Colors",
+      "path": "assets/styles/variables/colors.css",
+      "filter": {
+        "types": [
+          "color"
+        ]
+      },
+      "parsers": [
+        {
+          "name": "sort-by",
+          "options": {
+            "keys": [
+              "name"
+            ]
+          }
+        },
+        {
+          "name": "to-css-custom-properties"
+        }
+      ]
+    },
+    {
+      "name": "Design Tokens / Measurements",
+      "path": "assets/styles/variables/measurements.css",
+      "filter": {
+        "types": [
+          "measurement"
+        ]
+      },
+      "parsers": [
+        {
+          "name": "sort-by",
+          "options": {
+            "keys": [
+              "name"
+            ]
+          }
+        },
+        {
+          "name": "to-css-custom-properties"
+        }
+      ]
+    },
+    {
+      "name": "Design Tokens / TextStyles",
+      "path": "assets/styles/variables/textstyles.css",
+      "filter": {
+        "types": [
+          "textStyle"
+        ]
+      },
+      "parsers": [
+        {
+          "name": "to-css-text-style",
+          "options": {
+            "exclude": ["color", "text-indent", "vertical-align", "text-align"],
+            "relativeLineHeight": true,
+            "fontFamilyFormat": "camelCase",
+            "genericFamily": "serif"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Design Tokens / Fonts",
+      "path": "assets/fonts",
+      "filter": {
+        "types": [
+          "font"
+        ]
+      },
+      "parsers": [
+        {
+          "name": "convert-font",
+          "options": {
+            "formats": ["woff2", "woff"],
+            "fileNameKey": ["fontFamily", "fontWeight"],
+            "fileNameFormat": "kebabCase"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Design Tokens / Fonts",
+      "path": "assets/styles/variables/fonts.css",
+      "filter": {
+        "types": [
+          "font"
+        ]
+      },
+      "parsers": [
+        {
+          "name": "to-css-font-import",
+          "options": {
+            "formats": ["woff", "woff2"],
+            "fontsPath": "../../fonts",
+            "fontFamilyTransform": "kebabCase"
+          }
+        }
+      ]
+    }
+  ]
+}
