@@ -1,5 +1,5 @@
 {
-  "repository": "@specifyapp/Specify-Demo",
+  "repository": "@specifyapp/qa-luch",
   "rules": [
     {
       "name": "Design Tokens / Colors",
