@@ -14,43 +14,6 @@
       ]
     },
     {
-      "name": "Design Tokens / Icons",
-      "path": "assets/icons",
-      "filter": {
-        "types": ["vector"]
-      },
-      "parsers": [
-        {
-          "name": "svgo",
-          "options": {
-            "svgo": {
-              "plugins": [
-                {
-                  "removeDimensions": true
-                },
-                {
-                  "removeAttrs": {
-                    "attrs": "*:(fill|stroke)"
-                  }
-                },
-                {
-                  "addAttributesToSVGElement": {
-                    "attributes": ["width=\"1em\"", "height=\"1em\""]
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "name": "name-assets-files-by-pattern",
-          "options": {
-            "pattern": "{{name}}.{{format}}"
-          }
-        }
-      ]
-    },
-    {
       "name": "Assets / Fonts",
       "path": "assets/fonts",
       "filter": {
