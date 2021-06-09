@@ -1,0 +1,10 @@
+:root {
+  /* COLOR */
+  --colors-accent: hsl(216, 77%, 51%);
+  --colors-black: hsl(226, 18%, 14%);
+  --colors-green: hsl(117, 55%, 56%);
+  --colors-grey: hsl(214, 26%, 84%);
+  --colors-orange: hsl(33, 83%, 62%);
+  --colors-red: hsl(3, 79%, 52%);
+  --colors-white: hsl(0, 0%, 100%);
+}
