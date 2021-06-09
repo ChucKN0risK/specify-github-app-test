@@ -9,12 +9,7 @@
       },
       "parsers": [
         {
-          "name": "to-css-custom-properties",
-          "options": {
-            "formatTokens":{
-              "color": "hsl"
-            }
-          }
+          "name": "to-css-custom-properties"
         }
       ]
     },
