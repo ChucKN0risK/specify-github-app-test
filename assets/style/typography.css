@@ -1,0 +1,129 @@
+.app-body-l-text-style {
+  font-family: Inter-SemiBold, serif;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.app-body-m-text-style {
+  font-family: Inter-Medium, serif;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.app-body-s-text-style {
+  font-family: Inter-Regular, serif;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.app-caption-text-style {
+  font-family: Inter-Regular, serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.app-code-text-style {
+  font-family: FiraCode-Regular, serif;
+  font-size: 13px;
+  line-height: 1.54;
+}
+
+.app-section-text-style {
+  font-family: Inter-Medium, serif;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.06px;
+  text-transform: uppercase;
+}
+
+.app-subtitle-text-style {
+  font-family: Inter-Medium, serif;
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+.app-title-1-text-style {
+  font-family: Inter-SemiBold, serif;
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+.app-title-2-text-style {
+  font-family: Inter-SemiBold, serif;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.web-body-primary-l-text-style {
+  font-family: Inter-SemiBold, serif;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.web-body-primary-m-text-style {
+  font-family: Inter-Medium, serif;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.web-body-primary-s-text-style {
+  font-family: Inter-Regular, serif;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.web-body-secondary-l-text-style {
+  font-family: Inter-SemiBold, serif;
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+.web-body-secondary-m-text-style {
+  font-family: Inter-Medium, serif;
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+.web-body-secondary-s-text-style {
+  font-family: Inter-Regular, serif;
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+.web-code-text-style {
+  font-family: FiraCode-Regular, serif;
+  font-size: 13px;
+  line-height: 1.54;
+}
+
+.web-headline-text-style {
+  font-family: Inter-Bold, serif;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.web-section-text-style {
+  font-family: Inter-Medium, serif;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.06px;
+  text-transform: uppercase;
+}
+
+.web-subtitle-text-style {
+  font-family: Inter-Medium, serif;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.web-title-1-text-style {
+  font-family: Inter-SemiBold, serif;
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+.web-title-2-text-style {
+  font-family: Inter-SemiBold, serif;
+  font-size: 24px;
+  line-height: 1.33;
+}
