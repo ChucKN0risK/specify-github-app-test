@@ -1,0 +1,36 @@
+{
+  "repository": "@specifyapp/Choco-DS",
+  "rules": [
+    {
+      "name": "Design Tokens",
+      "path": "tokens/theme.js",
+      "filter": {
+        "types": ["color", "measurement", "font", "textStyle"]
+      },
+      "parsers": [
+        {
+          "name": "to-theme-ui",
+          "options": {
+            "variants": true,
+            "formatTokens": {
+              "colorFormat": {
+                "format": "hex"
+              },
+              "fontSizeFormat": {
+                "type": "string",
+                "unit": "rem",
+                "freeze": true
+              }
+            },
+            "presets": {
+              "fontWeights": {
+                "preset": "base",
+                "freeze": true
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
