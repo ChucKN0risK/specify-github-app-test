@@ -1,0 +1,22 @@
+{
+  "repository": "@specifyapp/Specify-Demo",
+  "rules": [
+    {
+      "name": "Design Tokens / Colors",
+      "path": "assets/style/colors.css",
+      "filter": {
+        "types": ["color"]
+      },
+      "parsers": [
+        {
+          "name": "to-css-custom-properties",
+          "options": {
+            "formatTokens":{
+              "color": "hsl"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
