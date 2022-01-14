@@ -1,5 +1,6 @@
 {
   "repository": "@specifyapp/lucho-test",
+  "head": "update-design",
   "rules": [
     {
       "name": "Design tokens",
