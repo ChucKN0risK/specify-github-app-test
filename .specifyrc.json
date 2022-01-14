@@ -20,7 +20,7 @@
             "formatName": "kebabCase",
             "formatTokens": {
               "colorFormat": {
-                "format": "rgb"
+                "format": "hex"
               }
             },
             "formatConfig": {
