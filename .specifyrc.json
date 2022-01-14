@@ -1,30 +1,73 @@
 {
-  "repository": "@specifyapp/Seeds",
+  "repository": "@specifyapp/lucho-test",
   "rules": [
     {
-      "name": "Design Tokens / Colors",
-      "path": "assets/style/colors.css",
+      "name": "Design tokens",
+      "path": "packages/core/src/styles/themeFromSpecify.js",
       "filter": {
-        "types": ["color"]
+        "types": [
+          "color",
+          "shadow",
+          "gradient",
+          "textStyle"
+        ]
       },
       "parsers": [
         {
-          "name": "to-css-custom-properties",
+          "name": "to-tailwind",
           "options": {
-            "formatTokens":{
-              "color": "hsl"
+            "formatName": "kebabCase",
+            "formatTokens": {
+              "colorFormat": {
+                "format": "rgb"
+              }
+            },
+            "formatConfig": {
+              "objectName": "customTheme",
+              "module": "commonjs",
+              "singleQuote": true
+            },
+            "renameKeys": {
+              "backgroundImage": "background-image-{{name}}",
+              "borderColor": "border-color-{{name}}",
+              "borderOpacity": "border-opacity-{{name}}",
+              "borderRadius": "border-radius-{{name}}",
+              "borderWidth": "border-width-{{name}}",
+              "boxShadow": "box-shadow-{{name}}",
+              "colors": "colors-{{name}}",
+              "fontFamily": "font-family-{{name}}",
+              "fontSize": "font-size-{{name}}",
+              "fontWeight": "font-weight-{{name}}",
+              "letterSpacing": "letter-spacing-{{name}}",
+              "lineHeight": "line-height-{{name}}",
+              "opacity": "opacity-{{name}}",
+              "spacing": "spacing-{{name}}",
+              "textColor": "text-color-{{name}}",
+              "textOpacity": "text-opacity-{{name}}",
+              "transitionDuration": "transition-duration-{{name}}",
+              "zIndex": "z-index-{{name}}"
             }
           }
         }
       ]
     },
     {
-      "name": "Design Tokens / Icons",
-      "path": "assets/icons",
+      "name": "Icons",
+      "path": "packages/icons/src/",
       "filter": {
-        "types": ["vector"]
+        "types": [
+          "vector"
+        ]
       },
       "parsers": [
+        {
+          "name": "pascalcasify",
+          "options": {
+            "keys": [
+              "name"
+            ]
+          }
+        },
         {
           "name": "svgo",
           "options": {
@@ -40,67 +83,14 @@
                 },
                 {
                   "addAttributesToSVGElement": {
-                    "attributes": ["width=\"1em\"", "height=\"1em\""]
+                    "attributes": [
+                      "width=\"1em\"",
+                      "height=\"1em\""
+                    ]
                   }
                 }
               ]
             }
-          }
-        },
-        {
-          "name": "name-assets-files-by-pattern",
-          "options": {
-            "pattern": "{{name}}.{{format}}"
-          }
-        }
-      ]
-    },
-    {
-      "name": "Assets / Fonts",
-      "path": "assets/fonts",
-      "filter": {
-        "types": ["font"]
-      },
-      "parsers": [
-        {
-          "name": "convert-font",
-          "options": {
-            "formats": ["woff2", "woff"]
-          }
-        }
-      ]
-    },
-    {
-      "name": "Design Tokens / Fonts",
-      "path": "assets/style/fonts.css",
-      "filter": {
-        "types": ["font"]
-      },
-      "parsers": [
-        {
-          "name": "to-css-font-import",
-          "options": {
-            "formats": ["woff2", "woff"],
-            "includeFontWeight": false,
-            "fontsPath": "../fonts/"
-          }
-        }
-      ]
-    },
-    {
-      "name": "Design Tokens / Text Styles",
-      "path": "assets/style/typography.css",
-      "filter": {
-        "types": ["textStyle"]
-      },
-      "parsers": [
-        {
-          "name": "to-css-text-style",
-          "options": {
-            "exclude": ["color", "text-indent", "vertical-align", "text-align"],
-            "suffix": "-text-style",
-            "relativeLineHeight": true,
-            "genericFamily": "serif"
           }
         }
       ]
