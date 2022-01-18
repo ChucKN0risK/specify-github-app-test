@@ -10,9 +10,9 @@ const customTheme = {
     'line-height-title': '40px',
   },
   textColor: {
-    'text-color-body': 'rgb(196, 196, 196)',
-    'text-color-code': 'rgb(196, 196, 196)',
-    'text-color-title': 'rgb(196, 196, 196)',
+    'text-color-body': '#c4c4c4',
+    'text-color-code': '#c4c4c4',
+    'text-color-title': '#c4c4c4',
   },
   fontFamily: {
     'font-family-body': ['Inter-Medium'],
@@ -25,20 +25,19 @@ const customTheme = {
     'font-weight-title': 600,
   },
   colors: {
-    'colors-colors-accent': 'rgb(102, 80, 239)',
-    'colors-colors-black': 'rgb(30, 33, 43)',
-    'colors-colors-green': 'rgb(88, 205, 82)',
-    'colors-colors-grey': 'rgb(204, 213, 225)',
-    'colors-colors-orange': 'rgb(255, 142, 5)',
-    'colors-colors-red': 'rgb(227, 44, 34)',
-    'colors-colors-white': 'rgb(255, 255, 255)',
+    'colors-colors-accent': '#6650ef',
+    'colors-colors-black': '#1e212b',
+    'colors-colors-green': '#58cd52',
+    'colors-colors-grey': '#ccd5e1',
+    'colors-colors-orange': '#ff8e05',
+    'colors-colors-red': '#e32c22',
+    'colors-colors-white': '#ffffff',
   },
   boxShadow: {
-    'box-shadow-elevation-1': '0px 4px 8px rgba(0, 0, 0, 0.1)',
-    'box-shadow-elevation-2':
-      '0px 4px 28px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.1)',
+    'box-shadow-elevation-1': '0px 4px 8px #000000',
+    'box-shadow-elevation-2': '0px 4px 28px #000000, 0px 4px 4px #000000',
     'box-shadow-elevation-3':
-      '0px 1.8518518209457397px 3.1481480598449707px rgba(0, 0, 0, 0.02), 0px 8.148148536682129px 6.518518447875977px rgba(0, 0, 0, 0.03), 0px 20px 13px rgba(0, 0, 0, 0.04), 0px 38.51852035522461px 25.481481552124023px rgba(0, 0, 0, 0.04), 0px 64.81481170654297px 46.85185241699219px rgba(0, 0, 0, 0.05), 0px 100px 80px rgba(0, 0, 0, 0.07)',
+      '0px 1.8518518209457397px 3.1481480598449707px #000000, 0px 8.148148536682129px 6.518518447875977px #000000, 0px 20px 13px #000000, 0px 38.51852035522461px 25.481481552124023px #000000, 0px 64.81481170654297px 46.85185241699219px #000000, 0px 100px 80px #000000',
   },
 
   backgroundImage: (theme) => ({
