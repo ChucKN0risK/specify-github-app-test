@@ -1,0 +1,17 @@
+{
+  "repository": "@specifyapp/Seeds",
+  "rules": [
+    {
+      "name": "Design Tokens",
+      "path": "tokens/tailwind-theme.js",
+      "filter": {
+        "types": ["color", "textStyle", "gradient", "font"]
+      },
+      "parsers": [
+        {
+          "name": "to-tailwind"
+        }
+      ]
+    }
+  ]
+}
