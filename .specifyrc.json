@@ -1,0 +1,28 @@
+{
+  "repository": "@specifyapp/Seeds",
+  "rules": [
+    {
+      "name": "Design Tokens for Tailwind",
+      "path": "styles/theme.js",
+      "filter": {
+        "types": ["color", "gradient", "textStyles", "measurement"]
+      },
+      "parsers": [
+        {
+          "name": "to-tailwind",
+          "options": {
+            "formatTokens": {
+              "colorFormat": {
+                "format": "rgb"
+              }
+            },
+            "formatConfig": {
+              "objectName": "extend",
+              "module": "commonjs"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
