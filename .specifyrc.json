@@ -1,0 +1,17 @@
+{
+  "repository": "@specifyapp/Seeds",
+  "rules": [
+    {
+      "name": "Design Tokens Tailwind Config",
+      "path": "tailwind-config.js",
+      "filter": {
+        "types": ["color", "textStyle", "measurement", "shadow"]
+      },
+      "parsers": [
+        {
+          "name": "to-tailwind"
+        }
+      ]
+    }
+  ]
+}
