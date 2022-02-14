@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "FiraCode-Medium";
+  src: url("FiraCode-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: url("Inter-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
