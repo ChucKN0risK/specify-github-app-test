@@ -1,0 +1,39 @@
+.body-text-style {
+  font-family: Inter-Medium, serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 10px;
+}
+
+.body-with-opacity-text-style {
+  font-family: Inter-Medium, serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 10px;
+}
+
+.code-text-style {
+  font-family: FiraCode-Medium, serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.54;
+}
+
+.list-text-style {
+  font-family: Roboto-Regular, serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  font-variant: small-caps;
+}
+
+.title-text-style {
+  font-family: Inter-SemiBold, serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
