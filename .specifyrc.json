@@ -1,0 +1,43 @@
+{
+  "repository": "@specifyapp/Seeds",
+  "rules": [
+    {
+      "name": "Design Tokens",
+      "path": "tokens/theme.js",
+      "filter": {
+        "types": ["color", "border", "shadow", "font", "textStyle"]
+      },
+      "parsers": [
+        {
+          "name": "to-jss",
+          "options": {
+            "formatName": "camelCase",
+            "formatTokens":{
+              "colorFormat": "rgb",
+              "textStyleFormat": "classObject",
+              "fontSizeUnit":  "px"
+            },
+            "formatConfig": {
+              "jssObjectName": "lightTheme",
+              "exportDefault": false,
+              "tabWidth": 4,
+              "singleQuote": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Design Tokens",
+      "path": "tokens/theme-tailwind.js",
+      "filter": {
+        "types": ["color", "border", "shadow", "font", "textStyle"]
+      },
+      "parsers": [
+        {
+          "name": "to-tailwind"
+        }
+      ]
+    }
+  ]
+}
