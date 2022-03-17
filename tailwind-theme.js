@@ -1,0 +1,82 @@
+const theme = {
+  spacing: {
+    baseSpace01: "4px",
+    baseSpace02: "8px",
+    baseSpace03: "12px",
+    baseSpace04: "16px",
+    baseSpace05: "32px",
+    baseSpace06: "48px",
+    baseSpace07: "64px",
+    baseSpace08: "80px",
+    baseSpace09: "96px",
+    baseSpace10: "112px",
+  },
+  fontSize: {
+    code: "13px",
+    body: "14px",
+    bodyWithOpacity: "14px",
+    list: "14px",
+    title: "32px",
+  },
+  letterSpacing: { body: "10px", bodyWithOpacity: "10px" },
+  lineHeight: {
+    body: "20px",
+    bodyWithOpacity: "20px",
+    code: "20px",
+    list: "20px",
+    title: "40px",
+  },
+  textColor: {
+    body: "#1e212b",
+    bodyWithOpacity: "#1e212b",
+    code: "#ff8e05",
+    title: "#1e212b",
+  },
+  fontFamily: {
+    body: ["Inter-Medium"],
+    bodyWithOpacity: ["Inter-Medium"],
+    code: ["FiraCode-Medium"],
+    list: ["Roboto-Regular"],
+    title: ["Inter-SemiBold"],
+  },
+  fontWeight: {
+    list: 400,
+    body: 500,
+    bodyWithOpacity: 500,
+    code: 500,
+    title: 600,
+  },
+  textOpacity: { bodyWithOpacity: "0.30000001192092896" },
+  borderWidth: {
+    borderAccent: "2px",
+    borderAccentWithOpacity: "2px",
+    borderAccentWithoutRadii: "2px",
+    borderDashed: "1px",
+  },
+  borderRadius: {
+    borderAccent: "16px",
+    borderAccentWithOpacity: "16px",
+    borderDashed: "16px",
+  },
+  borderColor: {
+    borderAccent: "#6650ef",
+    borderAccentWithOpacity: "#6650ef",
+    borderAccentWithoutRadii: "#6650ef",
+    borderDashed: "#1e212b",
+  },
+  borderOpacity: {
+    borderAccentWithOpacity: "0.5",
+    borderAccentWithoutRadii: "0.5",
+  },
+  colors: {
+    colorsAccent: "#577cfe",
+    colorsBlack: "#1e212b",
+    colorsGreen: "#58cd52",
+    colorsGrey: "#ccd5e1",
+    colorsOrange: "#ff8e05",
+    colorsRed: "#f5483f",
+    colorsWhite: "#ffffff",
+  },
+};
+
+export default theme;
