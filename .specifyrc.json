@@ -1,0 +1,97 @@
+{
+  "repository": "@specifyapp/Seeds",
+  "rules": [
+    {
+      "name": "Design Tokens",
+      "filter": {
+        "types": ["color", "border", "textStyle", "measurement"]
+      },
+      "path": "tailwind-theme.js",
+      "parsers": [
+        {
+          "name": "to-tailwind",
+          "options": {
+            "formatTokens": {
+              "colorFormat": {
+                "format": "rgb"
+              }
+            },
+            "formatConfig": {
+              "objectName": "extend",
+              "module": "commonjs"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Design Tokens / Icons",
+      "path": "assets/icons",
+      "filter": {
+        "types": ["vector"]
+      },
+      "parsers": [
+        {
+          "name": "svgo",
+          "options": {
+            "svgo": {
+              "plugins": [
+                {
+                  "removeDimensions": true
+                },
+                {
+                  "removeAttrs": {
+                    "attrs": "*:(fill|stroke)"
+                  }
+                },
+                {
+                  "addAttributesToSVGElement": {
+                    "attributes": ["width=\"1em\"", "height=\"1em\""]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "name-assets-files-by-pattern",
+          "options": {
+            "pattern": "{{name}}.{{format}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Assets / Fonts",
+      "path": "assets/fonts",
+      "filter": {
+        "types": ["font"]
+      },
+      "parsers": [
+        {
+          "name": "convert-font",
+          "options": {
+            "formats": ["woff2", "woff"]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Design Tokens / Fonts",
+      "path": "assets/style/fonts.css",
+      "filter": {
+        "types": ["font"]
+      },
+      "parsers": [
+        {
+          "name": "to-css-font-import",
+          "options": {
+            "formats": ["woff2", "woff"],
+            "includeFontWeight": false,
+            "fontsPath": "../fonts/"
+          }
+        }
+      ]
+    }
+  ]
+}
