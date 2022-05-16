@@ -1,0 +1,52 @@
+{
+  "repository": "@specifyapp/Seeds",
+  "rules": [
+    {
+      "name": "Design Tokens",
+      "path": "tokens/theme.js",
+      "parsers": [
+        {
+          "name": "to-theme-ui"
+        }
+      ]
+    },
+    {
+      "name": "Design Tokens / Icons",
+      "path": "tokens/icons",
+      "filter": {
+        "types": ["vector"]
+      },
+      "parsers": [
+        {
+          "name": "svgo",
+          "options": {
+            "svgo": {
+              "plugins": [
+                {
+                  "removeDimensions": true
+                },
+                {
+                  "removeAttrs": {
+                    "attrs": "*:(fill|stroke)"
+                  }
+                },
+                {
+                  "addAttributesToSVGElement": {
+                    "attributes": ["width=\"1em\"", "height=\"1em\""]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "name-assets-files-by-pattern",
+          "options": {
+            "pattern": "{{name}}.{{format}}"
+          }
+        }
+      ]
+    }
+  ]
+}
+
