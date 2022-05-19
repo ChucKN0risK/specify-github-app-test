@@ -1,0 +1,10 @@
+{
+  "time": {
+    "base": {
+      "veryLong": { "value": "3s" },
+      "short": { "value": "100ms" },
+      "long": { "value": "700ms" },
+      "base": { "value": "300ms" }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "asset": {
+    "icon": {
+      "userMask": { "value": "user-mask.pdf" },
+      "alignCenter": { "value": "align-center.pdf" },
+      "alertTriangle": { "value": "alert-triangle.pdf" },
+      "alertOctagon": { "value": "alert-octagon.svg" },
+      "alertCircle": { "value": "alert-circle.svg" },
+      "airplay": { "value": "airplay.svg" },
+      "activity": { "value": "activity.svg" }
+    }
+  }
+}

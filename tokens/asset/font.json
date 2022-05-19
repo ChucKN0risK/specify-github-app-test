@@ -1,0 +1,16 @@
+{
+  "asset": {
+    "font": {
+      "robotoRegular": {
+        "ttf": { "value": "assets/my-fonts/Roboto-Regular.ttf" }
+      },
+      "interSemiBold": {
+        "ttf": { "value": "assets/my-fonts/Inter-SemiBold.ttf" }
+      },
+      "interMedium": { "ttf": { "value": "assets/my-fonts/Inter-Medium.ttf" } },
+      "firaCodeMedium": {
+        "ttf": { "value": "assets/my-fonts/FiraCode-Medium.ttf" }
+      }
+    }
+  }
+}

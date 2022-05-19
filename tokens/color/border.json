@@ -1,0 +1,10 @@
+{
+  "color": {
+    "border": {
+      "borderDashed": { "value": "rgb(30, 33, 43)" },
+      "borderAccentWithoutRadii": { "value": "rgba(102, 80, 239, 0.5)" },
+      "borderAccentWithOpacity": { "value": "rgba(102, 80, 239, 0.5)" },
+      "borderAccent": { "value": "rgb(102, 80, 239)" }
+    }
+  }
+}

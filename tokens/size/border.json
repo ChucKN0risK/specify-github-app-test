@@ -1,0 +1,10 @@
+{
+  "size": {
+    "border": {
+      "borderDashed": { "value": "1px" },
+      "borderAccentWithoutRadii": { "value": "2px" },
+      "borderAccentWithOpacity": { "value": "2px" },
+      "borderAccent": { "value": "2px" }
+    }
+  }
+}

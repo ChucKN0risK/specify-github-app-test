@@ -1,0 +1,15 @@
+{
+  "color": {
+    "base": {
+      "colors": {
+        "white": { "value": "rgb(255, 255, 255)" },
+        "red": { "value": "rgb(245, 72, 63)" },
+        "orange": { "value": "rgb(255, 142, 5)" },
+        "grey": { "value": "rgb(204, 213, 225)" },
+        "green": { "value": "rgb(88, 205, 82)" },
+        "black": { "value": "rgb(30, 33, 43)" },
+        "accent": { "value": "rgb(87, 124, 254)" }
+      }
+    }
+  }
+}

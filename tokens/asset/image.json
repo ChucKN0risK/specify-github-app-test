@@ -1,0 +1,8 @@
+{
+  "asset": {
+    "image": {
+      "photoExample": { "value": "photo-example@2.jpg" },
+      "acmeLogo": { "value": "acme-logo@1.png" }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "size": {
+    "shadow": {
+      "elevation3": {
+        "0": {
+          "offsetY": { "value": "1.8518518209457397px" },
+          "blur": { "value": "3.1481480598449707px" }
+        },
+        "1": {
+          "offsetY": { "value": "8.148148536682129px" },
+          "blur": { "value": "6.518518447875977px" }
+        },
+        "2": { "offsetY": { "value": "20px" }, "blur": { "value": "13px" } },
+        "3": {
+          "offsetY": { "value": "38.51852035522461px" },
+          "blur": { "value": "25.481481552124023px" }
+        },
+        "4": {
+          "offsetY": { "value": "64.81481170654297px" },
+          "blur": { "value": "46.85185241699219px" }
+        },
+        "5": {
+          "offsetY": { "value": "100px" },
+          "blur": { "value": "80px" },
+          "spread": { "value": "1px" }
+        }
+      },
+      "elevation2": {
+        "0": { "offsetY": { "value": "4px" }, "blur": { "value": "28px" } },
+        "1": { "offsetY": { "value": "4px" }, "blur": { "value": "4px" } }
+      },
+      "elevation1": {
+        "0": { "offsetY": { "value": "4px" }, "blur": { "value": "8px" } }
+      }
+    }
+  }
+}

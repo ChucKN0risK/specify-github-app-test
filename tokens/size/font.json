@@ -1,0 +1,11 @@
+{
+  "size": {
+    "font": {
+      "title": { "value": "32px" },
+      "list": { "value": "14px" },
+      "code": { "value": "13px" },
+      "bodyWithOpacity": { "value": "14px" },
+      "body": { "value": "14px" }
+    }
+  }
+}

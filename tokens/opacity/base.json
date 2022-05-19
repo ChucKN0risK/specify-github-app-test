@@ -1,0 +1,9 @@
+{
+  "opacity": {
+    "base": {
+      "visible": { "value": "0.95" },
+      "transparent": { "value": "0.1" },
+      "subtle": { "value": "0.5" }
+    }
+  }
+}

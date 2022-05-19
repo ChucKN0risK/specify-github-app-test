@@ -1,0 +1,9 @@
+{
+  "depth": {
+    "base": {
+      "middle": { "value": "50" },
+      "foreground": { "value": "100" },
+      "background": { "value": "1" }
+    }
+  }
+}
