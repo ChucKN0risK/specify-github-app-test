@@ -1,0 +1,20 @@
+{
+  "repository": "@specifyapp/Seeds",
+  "rules": [
+    {
+      "name": "Design Tokens",
+      "path": "tokens/",
+      "parsers": [
+        {
+          "name": "to-style-dictionary",
+          "options": {
+            "splitBy": "/",
+            "assetsBaseDirectory": {
+              "fonts": "assets/my-fonts/"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
