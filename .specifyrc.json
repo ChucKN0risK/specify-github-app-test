@@ -1,0 +1,22 @@
+{
+  "repository": "@specifyapp/Seeds",
+  "rules": [
+    {
+      "name": "Design Tokens / Colors",
+      "filter": {
+        "types": ["color"]
+      },
+      "path": "assets/style/colors.css",
+      "parsers": [
+        {
+          "name": "to-css-custom-properties",
+          "options": {
+            "formatTokens":{
+              "color": "hsl"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
