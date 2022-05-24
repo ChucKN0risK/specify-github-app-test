@@ -1,22 +1,10 @@
 {
-  "repository": "@specifyapp/Seeds",
+  "repository": "@specifyapp/Kickstart-DS-Demo",
+  "head": "specify",
   "rules": [
     {
-      "name": "Design Tokens / Colors",
-      "filter": {
-        "types": ["color"]
-      },
-      "path": "assets/style/colors.css",
-      "parsers": [
-        {
-          "name": "to-css-custom-properties",
-          "options": {
-            "formatTokens":{
-              "color": "hsl"
-            }
-          }
-        }
-      ]
+      "name": "Design Tokens",
+      "path": "specify-tokens.json"
     }
   ]
 }
