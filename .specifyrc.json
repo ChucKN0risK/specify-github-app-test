@@ -1,0 +1,11 @@
+{
+  "repository": "@specifyapp/Seeds",
+  "head": "specify",
+  "base": "main",
+  "rules": [
+    {
+      "name": "Extract all tokens to JSON",
+      "path": "specify_output/all-tokens.json"
+    }
+  ]
+}
